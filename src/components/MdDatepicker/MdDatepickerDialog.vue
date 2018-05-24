@@ -135,13 +135,14 @@
         type: Boolean,
         default: false
       },
-      currentView: {
+      startingView: {
         type: String,
         default: 'day'
       }
     },
     data: () => ({
       currentDate: null,
+      currentView: null,
       selectedDate: null,
       showDialog: false,
       monthAction: null,
@@ -343,7 +344,7 @@
       resetDate () {
         this.currentDate = this.mdDate || new Date()
         this.selectedDate = this.mdDate
-        this.currentView = 'day'
+        this.currentView = this.startingView
       }
     },
     created () {

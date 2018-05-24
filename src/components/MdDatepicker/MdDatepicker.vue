@@ -11,7 +11,7 @@
         :md-date.sync="selectedDate"
         :md-disabled-dates="mdDisabledDates"
         :mdImmediately="mdImmediately"
-        :currentView="currentView"
+        :startingView="startingView"
         @md-closed="toggleDialog"
       />
     </keep-alive>
@@ -61,7 +61,7 @@
         type: Number,
         default: 1000
       },
-      currentView: {
+      startingView: {
         type: String,
         default: 'day'
       }
