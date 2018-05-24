@@ -134,6 +134,10 @@
       mdImmediately: {
         type: Boolean,
         default: false
+      },
+      currentView: {
+        type: String,
+        default: 'day'
       }
     },
     data: () => ({
@@ -141,7 +145,6 @@
       selectedDate: null,
       showDialog: false,
       monthAction: null,
-      currentView: 'day',
       contentStyles: {},
       availableYears: null
     }),

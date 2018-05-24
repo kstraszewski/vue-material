@@ -11,6 +11,7 @@
         :md-date.sync="selectedDate"
         :md-disabled-dates="mdDisabledDates"
         :mdImmediately="mdImmediately"
+        :currentView="currentView"
         @md-closed="toggleDialog"
       />
     </keep-alive>
@@ -59,6 +60,10 @@
       MdDebounce: {
         type: Number,
         default: 1000
+      },
+      currentView: {
+        type: String,
+        default: 'day'
       }
     },
     data: () => ({
