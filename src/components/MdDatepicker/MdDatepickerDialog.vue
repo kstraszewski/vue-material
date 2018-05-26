@@ -342,6 +342,7 @@
         this.closeDialog()
       },
       resetDate () {
+        console.log(this.startingView)
         this.currentDate = this.mdDate || new Date()
         this.selectedDate = this.mdDate
         this.currentView = this.startingView
